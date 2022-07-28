@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/cropper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Редактор удостоверений</title>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.svg" alt="logo" class="header__logo">
+        <div class="header__wrapper">
+            <a class="header__title header__active" href="index.html">Редактор удостоверений</a>
+            <a class="header__title header__margin" href="folders.html">Создание папок</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="newListUsers__block">
+            <textarea name="" id="area" cols="70" rows="30"></textarea>
+            <button class="newList__btn" id="newList">Сформировать список</button>
+        </div>
+        
+        <div class="croppBlock hide">
+            <div class="croppBlock__users">
+                <div class="usersList" id="userListParent">
+                    <label class="usersList__title" for="userList">Список всех сотрудников</label>
+                    <select class="usersList__block" id="userListBlock"></select>
+                </div>
+    
+                <div class="usersRadio">
+                    <div class="usersRadio__item">
+                        <input class="paper" name="lic" id="msl" type="radio" value="МСЛ">
+                        <label class="userRadio__title" for="msl">МСЛ</label>
+                    </div>
+
+                    <div class="usersRadio__item">    
+                        <input class="paper" name="lic" id="opp" type="radio" value="ОПП">
+                        <label class="userRadio__title" for="opp">ОПП</label>
+                    </div>
+
+                    <div class="usersRadio__item">    
+                        <input class="paper" name="lic" id="opp" type="radio" value="РВ2">
+                        <label class="userRadio__title" for="opp">РВ2</label>
+                    </div>
+
+                    <div class="usersRadio__item">    
+                        <input class="paper" name="lic" id="opp" type="radio" value="ОЗП1">
+                        <label class="userRadio__title"  for="opp">ОЗП1</label>
+                    </div>
+        
+                    <div class="usersRadio__item">    
+                        <input class="paper" name="lic" id="opp" type="radio" value="ОЗП2">
+                        <label class="userRadio__title" for="opp">ОЗП2</label>
+                    </div>
+
+                    <div class="usersRadio__item">    
+                        <input class="paper" name="lic" id="opp" type="radio" value="ФЛГ">
+                        <label class="userRadio__title" for="opp">ФЛГ</label>
+                    </div>
+
+                    <div class="usersRadio__item">    
+                        <input class="paper" name="lic" id="opp" type="radio" value="МО">
+                        <label class="userRadio__title" for="opp">МО</label>
+                    </div>
+
+                    <div class="usersRadio__item">    
+                        <input class="paper" name="lic" id="opp" type="radio" value="МО1">
+                        <label class="userRadio__title" for="opp">МО1</label>
+                    </div>
+
+                    <div class="usersRadio__item">    
+                        <input class="paper" name="lic" id="opp" type="radio" value="ПО">
+                        <label class="userRadio__title" for="opp">ПО</label>
+                    </div>
+
+                    <div class="usersRadio__item">    
+                        <input class="paper" name="lic" id="opp" type="radio" value="ПО1">
+                        <label class="userRadio__title" for="opp">ПО1</label>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="croppBlock__area">
+                <div id="canvas" class="canvas">
+                    <img class="canvas__img" src="img/canvas.png" alt="" id="image">
+                </div>
+
+                <div class="downloadBlock">
+                    <input  accept="image/*" title =" " type="file" required id="file-input" />
+                    <button class="primary__btn"  id="save">Сохранить</button>
+                </div>
+            </div>
+
+            
+            
+            
+            
+    
+            
+    
+
+        </div>
+            
+    </div>
+       
+ 
+
+    <script src="js/cropper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
